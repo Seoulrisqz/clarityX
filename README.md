@@ -1,89 +1,130 @@
-clarityX 🌌
+<div align="center">
 
-clarityX is an impossibly smooth, AI-powered text refinement application built with React and Tailwind CSS. It is designed to take your messy, unstructured thoughts and instantly transform them into clear, natural, and human-sounding text.
+# clarityX 🌌
 
-Built with a gorgeous, dark-mode glassmorphism UI, clarityX gets out of your way and focuses entirely on the "Paste → Fix → Done" workflow, while hiding immense power inside its sidebar.
+### AI-powered text refinement built to make messy thoughts sound clear, natural, and human.
 
-🚀 Features
+[![Status](https://img.shields.io/badge/Status-Coming%20Soon-blueviolet?style=for-the-badge)](#coming-soon)
+[![Beta](https://img.shields.io/badge/Beta%20Testing-Opening%20Soon-00b894?style=for-the-badge)](#beta-testing)
+[![Built With](https://img.shields.io/badge/Built%20With-React%20%2B%20Tailwind-38bdf8?style=for-the-badge)](#tech-stack)
 
-Core Experience
+</div>
 
-The "Human" Algorithm: Built on top of the Gemini API, clarityX uses hard-coded "Gold Standard" prompt engineering. It doesn't just fix grammar—it tightens phrasing, removes redundancies, and ensures the output sounds conversational and real, never robotic.
+---
 
-Immersive Glassmorphism UI: Features a dynamic, slowly animating cosmic background with deep blurred panels (backdrop-filter) and custom pulsing neon typography.
+## ✨ Overview
 
-Instant Auto-Fix: Toggle "Auto-Fix" on, and the app will quietly polish your text in the background as you type (using intelligent debouncing).
+**clarityX** is a modern AI-powered writing assistant designed to turn rough, messy, or unstructured text into polished, natural-sounding writing.
 
-Advanced Tooling (The Hamburger Menu)
+The goal is simple:
 
-Tone Control: Choose from Natural, Casual, Professional, Friendly, Confident, or Persuasive.
+> Paste your text. Refine it instantly. Keep your voice.
 
-Rewrite Strength: Dictate the AI's boundaries (Light fixes, Medium balance, or Strong rewrites).
+clarityX is being built for students, creators, professionals, and everyday users who want their writing to sound cleaner without feeling robotic or over-edited.
 
-Length & Language: Force Short, Balanced, or Detailed outputs, in American or British English.
+---
 
-Custom Instructions & Protected Words: Tell the AI exactly what you want (e.g., "Make it sound like a text message") and protect specific brand names or slang from being altered.
+## 🚧 Coming Soon
 
-Local History: The app saves your last 10 input/output generations locally so you never lose a great rewrite.
+clarityX is currently **in active development** and is not fully finished yet.
 
-Quality of Life Additions
+A public beta version is planned soon, giving early users the chance to test the app, try the core writing tools, and help shape the final experience before launch.
 
-One-Click Simplify 🪄: A magic wand button on the output pane instantly forces a "Short, Casual, Strong" rewrite to make complex text instantly readable.
+---
 
-Dynamic Readability Score: Instantly tells you if your text is Easy, Medium, or Advanced to read.
+## 🧪 Beta Testing
 
-Export Options: 1-click Copy, Download to .txt, or native Web Share API integration.
+Beta testing will focus on:
 
-Word Count Guardian: Automatically tracks your inputs and enforces a 5,000-word limit to ensure lightning-fast processing.
+- Improving rewrite quality
+- Making the interface smoother and faster
+- Testing different tones and rewrite strengths
+- Finding bugs before the public release
+- Collecting feedback from real users
 
-🛠️ Tech Stack
+More beta details will be added here as the app gets closer to release.
 
-Frontend Framework: React (using Hooks: useState, useEffect, useRef)
+---
 
-Styling: Tailwind CSS (with custom inline keyframes for blob animations and glassmorphism)
+## 🚀 Planned Features
 
-Icons: Lucide React
+### Core Writing Tools
 
-AI Engine: Google Gemini API (gemini-2.5-flash)
+- AI-powered grammar and clarity improvements
+- Natural, human-sounding rewrites
+- Tone adjustment options
+- Rewrite strength controls
+- Short, balanced, and detailed output modes
+- Readability feedback
 
-💻 How to Run Locally
+### User Experience
 
-Clone the repository:
+- Clean dark-mode interface
+- Smooth glassmorphism-inspired design
+- Fast paste-and-fix workflow
+- Simple copy and export options
+- Local writing history
+- Protected words and custom instructions
 
-git clone [https://github.com/yourusername/clarityX.git](https://github.com/yourusername/clarityX.git)
+---
+
+## 🎯 Vision
+
+Most writing tools either sound too formal, too robotic, or too obviously AI-generated.
+
+clarityX is being built to feel different — a tool that keeps the meaning of your words while making them easier to read, smoother to say, and more natural to share.
+
+---
+
+## 🛠️ Tech Stack
+
+| Area | Technology |
+|---|---|
+| Frontend | React |
+| Styling | Tailwind CSS |
+| Icons | Lucide React |
+| AI Engine | Google Gemini API |
+| Design Style | Dark UI, glassmorphism, modern gradients |
+
+---
+
+## 📌 Current Status
+
+| Item | Status |
+|---|---|
+| Core app concept | In progress |
+| UI design | In progress |
+| AI text refinement | In progress |
+| Beta testing | Coming soon |
+| Public launch | Not released yet |
+
+---
+
+## 💻 Local Development
+
+> Setup instructions may change as the project evolves.
+
+```bash
+git clone https://github.com/Seoulrisqz/clarityX.git
 cd clarityX
-
-
-Install dependencies:
-Ensure you have a React environment set up (like Vite or Create React App) with Tailwind CSS installed.
-
 npm install
-npm install lucide-react
-
-
-Add your API Key:
-Open App.jsx and locate the handleImproveText function. Find the apiKey variable and insert your Google Gemini API key:
-
-const apiKey = "YOUR_GEMINI_API_KEY_HERE";
-
-
-(Note: In a production environment, you should move this to a .env file and fetch it securely).
-
-Start the development server:
-
 npm run dev
-# or
-npm start
+```
 
+You may need to configure your own API key or environment variables depending on the current development build.
 
-🧠 How the "Natural" Tone Works Under the Hood
+---
 
-clarityX is specifically engineered to avoid the "AI-generated" tone that plagues most writing tools. When set to the default "Natural" tone, the system injects a Gold Standard Example into the AI's system instructions:
+## 📣 Stay Tuned
 
-"I had a hard time explaining what happened yesterday, and I probably made things more confusing than they needed to be. For example, when I talked about the meeting, I was really trying to focus on how people reacted, but I didn’t make that clear, so it just sounded like I was complaining..."
+clarityX is still being built, polished, and tested.
 
-By forcing the AI to use this specific paragraph as its benchmark for pacing, vocabulary, and transition-smoothing, clarityX ensures that your output always sounds like a real human wrote it.
+Follow the repository for updates, beta testing information, and release progress.
 
-📝 License
+---
 
-Distributed under the MIT License. Feel free to use, modify, and build upon this project!
+<div align="center">
+
+**clarityX** — clearer words, smoother writing, better expression.
+
+</div>
